@@ -16,7 +16,7 @@ function isLegalAge(user:User){
     isLegalAge({
     firstName: "John",
     lastName: "Doe",
-    age: 20
+    age: 21
     })
 
 
