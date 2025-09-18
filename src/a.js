@@ -14,4 +14,5 @@ function doSomething(keyPressed) {
 doSomething(Direction.Up);
 doSomething(Direction.Down);
 doSomething(Direction.Right);
+console.log(Direction.Up);
 //# sourceMappingURL=a.js.map

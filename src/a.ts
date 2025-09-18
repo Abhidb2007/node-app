@@ -1,15 +1,11 @@
-enum Direction {
-    Up,
-    Down,
-    Right,
-    left
+enum ResponseStatus{
+    Success="200",
+    NotFound="404",
+    Error=500
 }
-function doSomething(keyPressed:Direction){
-    if(keyPressed === Direction.Up){
-
+app.get("/", (req, res)=>{
+    if(!req.query.userId){
+        res.status(ResponseStatus.Error).json({});
     }
-}
-doSomething(Direction.Up);
-doSomething(Direction.Down);
-doSomething(Direction.Right);
-
+    res.status(ResponseStatus.Success).json({});
+})
