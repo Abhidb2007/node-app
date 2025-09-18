@@ -11,3 +11,4 @@ function doSomething(keyPressed:Direction){
 }
 doSomething(Direction.Up);
 doSomething(Direction.Down);
+
