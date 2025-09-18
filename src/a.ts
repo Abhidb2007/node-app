@@ -1,9 +1,8 @@
-function identity<T>(arg: T): T {
-    return arg;
+export function add(x:number,y:number):number{
+    return x+y;
+}
+export function subtract(x:number,y:number):number{
+    return x-y;
 }
 
-let output1 = identity<string>("myString");
-let output2 = identity<number>(100);
-
-console.log(output1.toUpperCase()); // Works, because output1 is string
-console.log(output2.toFixed(2));    // Works, because output2 is number
+console.log(add(1,3))
