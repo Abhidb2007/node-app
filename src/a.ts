@@ -1,11 +1,6 @@
-enum ResponseStatus{
-    Success="200",
-    NotFound="404",
-    Error=500
+type Input=number|string;
+function firstEl(arr:Input[]){
+    return arr[0];
 }
-app.get("/", (req, res)=>{
-    if(!req.query.userId){
-        res.status(ResponseStatus.Error).json({});
-    }
-    res.status(ResponseStatus.Success).json({});
-})
+const value=firstEl(["ahi","asdf"])
+console.log(value);
