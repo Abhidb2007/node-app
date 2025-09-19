@@ -1,4 +1,5 @@
-function greet(firstName: string){
-    console.log("helloe"+firstName)
+function sum(a: number,b:number){
+    return a+b
 }
-greet("abhi")
+let ans=sum(12,3);
+console.log(ans);
