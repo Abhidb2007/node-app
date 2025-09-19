@@ -1,5 +1,8 @@
-function sum(a: number,b:number){
-    return a+b
+function isLegal(age: number){
+    if(age>18){
+        return true;
+    }else{
+        return false;
+    }
 }
-let ans=sum(12,3);
-console.log(ans);
+console.log(isLegal(20));
