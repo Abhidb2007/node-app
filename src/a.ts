@@ -1,8 +1,7 @@
-function isLegal(age: number){
-    if(age>18){
-        return true;
-    }else{
-        return false;
-    }
+function delayedCall(anotherFn:() =>void){
+    setTimeout(anotherFn,5000);
 }
-console.log(isLegal(20));
+function log(){
+    console.log("SFs")
+}
+delayedCall(log)
