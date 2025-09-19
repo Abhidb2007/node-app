@@ -1,8 +1,3 @@
-export function add(x:number,y:number):number{
-    return x+y;
+function greet(firstName: string){
+    console.log("helloe"+firstName)
 }
-export function subtract(x:number,y:number):number{
-    return x-y;
-}
-
-console.log(add(1,3))
