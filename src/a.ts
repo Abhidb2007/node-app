@@ -6,6 +6,6 @@ function greet(user:{
 }
 let user={
     name:"anu",
-    age:23
+    age:22
 }
 greet (user)
