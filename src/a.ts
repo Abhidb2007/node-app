@@ -1,15 +1,12 @@
-type Employee={
+interface Admin{
     name:string;
-    startDate:Date;
-};
-
-type Manager={
-    name:string;
-    department:string;
+    permission:string;
 }
-type TeamLead=Employee&Manager;
-const teamlead:TeamLead={
-    name:"ADSAS",
-    startDate:new Date(),
-    department:"software"
+interface User{
+    name:string;
+    age: number;
+}
+type UserorAdmin=User|Admin;
+function greet(user:UserorAdmin){
+    console.log(user.name)
 }
