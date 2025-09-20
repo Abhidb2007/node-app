@@ -1,11 +1,23 @@
-function greet(user:{
-    name:string,
-    age:number
-}) {
-    console.log("hello" +user.name);
+import React from "react";
+
+interface TodoType {
+  title: string;
+  description: string;
+  done: boolean;
 }
-let user={
-    name:"anu",
-    age:22
+
+interface TodoInput {
+  todo: TodoType;
 }
-greet (user)
+
+function Todo({ todo }: TodoInput): JSX.Element {
+  return (
+    <div>
+      <h1>{todo.title}</h1>
+      <h2>{todo.description}</h2>
+      <p>Status: {todo.done ? "Completed ✅" : "Pending ⏳"}</p>
+    </div>
+  );
+}
+
+export default Todo;
