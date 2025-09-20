@@ -1,15 +1,15 @@
-interface User{
-    name:string,
-    age: number,
-    greet:()=>string,
+type Employee={
+    name:string;
+    startDate:Date;
+};
+
+type Manager={
+    name:string;
+    department:string;
 }
-let user:User={
-    name:"ahu",
-    age:34,
-    greet:()=>{
-        return "hi"
-    }
-    
+type TeamLead=Employee&Manager;
+const teamlead:TeamLead={
+    name:"ADSAS",
+    startDate:new Date(),
+    department:"software"
 }
-const greeting=user.greet()
-console.log(greeting)
