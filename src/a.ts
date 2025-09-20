@@ -1,7 +1,11 @@
-function delayedCall(anotherFn:() =>void){
-    setTimeout(anotherFn,5000);
+function greet(user:{
+    name:string,
+    age:number
+}) {
+    console.log("hello" +user.name);
 }
-function log(){
-    console.log("SFs")
+let user={
+    name:"anu",
+    age:23
 }
-delayedCall(log)
+greet (user)
