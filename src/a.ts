@@ -1,13 +1,15 @@
-function greet(name:string):string{
-    return "Hello" + name
+interface User{
+    name:string,
+    age: number,
+    greet:()=>string,
 }
-function isEven(num: number):boolean{
-    if(num%2==0){
-        return true
-        
-    }else{
-        return false
+let user:User={
+    name:"ahu",
+    age:34,
+    greet:()=>{
+        return "hi"
     }
+    
 }
-const greeting=greet("123")
+const greeting=user.greet()
 console.log(greeting)
