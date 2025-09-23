@@ -1,5 +1,6 @@
 interface Admin{
     name:string;
+    id:number;
     permission:string;
 }
 interface User{
